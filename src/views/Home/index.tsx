@@ -3,7 +3,7 @@ import { Linking } from 'react-native';
 import { ProfileHeader, Divider, Projects } from '../../components';
 import api from '../../services/api';
 
-import * as S from './Home.elements';
+import * as S from './styles';
 
 export interface ProjectProps {
   name: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './Divider.elements';
+import * as S from './styles';
 
 const Divider: React.FC = () => <S.Container />;
 

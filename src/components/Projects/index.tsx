@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './Projects.elements';
+import * as S from './styles';
 
 export interface ProjectProps {
   name: string;

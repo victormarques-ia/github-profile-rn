@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './Project.elements';
+import * as S from './styles';
 
 const Project: React.FC = () => <S.Container />;
 

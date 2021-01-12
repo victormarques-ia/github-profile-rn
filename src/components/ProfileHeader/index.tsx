@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as S from './ProfileHeader.elements';
+import * as S from './styles';
 
 interface ProfileHeaderProps {
   name: string;
