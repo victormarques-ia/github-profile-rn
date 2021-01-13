@@ -6,13 +6,14 @@ export const Container = styled.TouchableOpacity`
   width: 128px;
   height: 92px;
   border-radius: 8px;
-  border: 1px solid #dfdfdf;
+  border: 1px solid ${props => props.theme.colors.detail};
   padding: 8px;
 `;
 
 export const DefaultText = styled.Text`
-  font-size: 16px;
-  color: #111;
+  font-family: ${props => props.theme.fonts.default.family};
+  font-size: ${props => props.theme.fonts.default.size};
+  color: ${props => props.theme.colors.text};
 `;
 
 export const Name = styled(DefaultText)`
@@ -20,6 +21,6 @@ export const Name = styled(DefaultText)`
 `;
 
 export const Technologie = styled(DefaultText)`
-  font-size: 12px;
-  color: #34a044;
+  font-size: ${props => props.theme.fonts.tiny.size};
+  color: ${props => props.theme.colors.primary};
 `;

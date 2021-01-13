@@ -8,12 +8,16 @@ const theme = {
 
   fonts: {
     big: {
-      family: 'Barlow_700Bold,',
+      family: 'Barlow_700Bold',
       size: '24px',
     },
-    default: {
-      family: 'Barlow_400Regular',
+    medium: {
+      family: 'Barlow_500Medium',
       size: '18px',
+    },
+    default: {
+      family: 'Barlow_400Medium',
+      size: '16px',
     },
     small: {
       family: 'Barlow_400Regular',
@@ -21,7 +25,7 @@ const theme = {
     },
     tiny: {
       family: 'Barlow_400Regular',
-      size: '10px',
+      size: '12px',
     },
   },
 };

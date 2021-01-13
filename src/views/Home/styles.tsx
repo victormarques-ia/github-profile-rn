@@ -6,8 +6,8 @@ export const Container = styled.View`
 `;
 
 export const GoToGitHubText = styled.Text`
-  font-size: 20px;
-  color: #fff;
+  font-size: ${props => props.theme.fonts.default.size};
+  color: ${props => props.theme.colors.background};
 `;
 
 export const GoToGitHubButton = styled.TouchableOpacity`
@@ -15,7 +15,7 @@ export const GoToGitHubButton = styled.TouchableOpacity`
   align-items: center;
 
   height: 54px;
-  background-color: #34a044;
+  background-color: ${props => props.theme.colors.primary};
 
   border-radius: 8px;
 `;

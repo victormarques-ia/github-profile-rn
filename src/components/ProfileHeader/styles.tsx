@@ -15,7 +15,7 @@ export const ProfileImage = styled.Image`
   width: 128px;
   height: 128px;
   border-radius: 64px;
-  border: 2px solid #34a044;
+  border: 2px solid ${props => props.theme.colors.primary};
 `;
 
 export const InfosContainer = styled.View`
@@ -23,8 +23,10 @@ export const InfosContainer = styled.View`
 `;
 
 export const DefaultText = styled.Text`
-  color: #111;
-  font-size: 24px;
+  font-family: ${props => props.theme.fonts.big.family};
+  font-size: ${props => props.theme.fonts.big.size};
+
+  color: ${props => props.theme.colors.text};
 `;
 
 export const Name = styled(DefaultText)`
@@ -32,7 +34,7 @@ export const Name = styled(DefaultText)`
 `;
 
 export const Description = styled(DefaultText)`
-  font-size: 16px;
+  font-size: ${props => props.theme.fonts.medium.size};
   opacity: 0.5;
   text-align: center;
 `;

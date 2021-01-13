@@ -2,7 +2,7 @@ import React from 'react';
 import { AppLoading } from 'expo';
 import Constants from 'expo-constants';
 import { StatusBar } from 'expo-status-bar';
-import { Platform, SafeAreaView, StyleSheet } from 'react-native';
+import { Platform } from 'react-native';
 
 import { Home } from './views';
 import {
@@ -41,6 +41,7 @@ const Screen = styled.SafeAreaView`
   font-family: ${props => props.theme.fonts.default.family};
   font-size: ${props => props.theme.fonts.default.size};
   background-color: ${props => props.theme.colors.background};
+  color: ${props => props.theme.colors.text};
 
   padding-top: ${Number(
     Platform.OS === 'android' ? Constants.statusBarHeight : 0,
