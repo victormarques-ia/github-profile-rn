@@ -15,7 +15,6 @@ export const ProfileImage = styled.Image`
   width: 128px;
   height: 128px;
   border-radius: 64px;
-  border: 2px solid ${props => props.theme.colors.primary};
 `;
 
 export const InfosContainer = styled.View`

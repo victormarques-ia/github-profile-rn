@@ -17,7 +17,6 @@ const Projects: React.FC<ProjectsProps> = ({ projects }: ProjectsProps) => {
   const renderProject = ({ index, item }) => (
     <Project
       index={index}
-      key={index}
       name={item.name}
       html_url={item.html_url}
       language={item.language}
@@ -31,6 +30,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }: ProjectsProps) => {
         renderItem={renderProject}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
+        keyExtractor={(item, index) => index.toString()}
       />
     </S.Container>
   );
