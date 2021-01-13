@@ -6,7 +6,7 @@ export const Container = styled.View`
 `;
 
 export const GoToGitHubText = styled.Text`
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
 `;
 

@@ -7,7 +7,7 @@ import * as S from './styles';
 
 export interface ProjectProps {
   name: string;
-  url: string;
+  html_url: string;
   language: string;
 }
 
@@ -56,10 +56,7 @@ const Home: React.FC = () => {
           />
           <Divider />
           <Projects projects={user.projects} />
-          <Divider />
-          <S.GoToGitHubButton
-            onPress={async () => await Linking.openURL(user.infos.url)}
-          >
+          <S.GoToGitHubButton onPress={() => Linking.openURL(user.infos.url)}>
             <S.GoToGitHubText>Ver GitHub</S.GoToGitHubText>
           </S.GoToGitHubButton>
         </>
