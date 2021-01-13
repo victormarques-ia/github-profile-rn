@@ -16,7 +16,7 @@ const theme = {
       size: '18px',
     },
     default: {
-      family: 'Barlow_400Medium',
+      family: 'Barlow_400Regular',
       size: '16px',
     },
     small: {
