@@ -1,3 +1,25 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View``;
+export const Container = styled.TouchableOpacity`
+  justify-content: center;
+
+  width: 128px;
+  height: 92px;
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  padding: 8px;
+`;
+
+export const DefaultText = styled.Text`
+  font-size: 16px;
+  color: #111;
+`;
+
+export const Name = styled(DefaultText)`
+  padding-bottom: 8px;
+`;
+
+export const Technologie = styled(DefaultText)`
+  font-size: 12px;
+  color: #34a044;
+`;
