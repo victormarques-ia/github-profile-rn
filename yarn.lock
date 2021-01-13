@@ -1089,6 +1089,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@expo-google-fonts/barlow@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/barlow/-/barlow-0.1.0.tgz#debe6872731cabab84c949f2f4d7fb8cdf30d1a9"
+  integrity sha512-nvYw5iZY/mPeal5ImIKFl+mejDqAu2L6Hzh7dEBL73pvMtCrQ0CzDjEyzI3bDRV21LQnRho5NBWVJhFP8ZPp7Q==
+
 "@expo/babel-preset-cli@0.2.18":
   version "0.2.18"
   resolved "https://registry.yarnpkg.com/@expo/babel-preset-cli/-/babel-preset-cli-0.2.18.tgz#136acf8a0efe259e29ebc614b68552e5acb47d86"
