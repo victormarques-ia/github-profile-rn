@@ -1,9 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import AppLoading from 'expo-app-loading';
-import Constants from 'expo-constants';
 import { StatusBar } from 'expo-status-bar';
-import { Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import {
@@ -27,14 +25,14 @@ const App: React.FC = () => {
   return !fontsLoaded ? (
     <AppLoading />
   ) : (
-    <NavigationContainer>
-      <ThemeProvider theme={theme}>
-        <StatusBar style="auto" />
-        <Screen>
+    <ThemeProvider theme={theme}>
+      <StatusBar style="auto" />
+      <Screen>
+        <NavigationContainer>
           <AppRoutes />
-        </Screen>
-      </ThemeProvider>
-    </NavigationContainer>
+        </NavigationContainer>
+      </Screen>
+    </ThemeProvider>
   );
 };
 
